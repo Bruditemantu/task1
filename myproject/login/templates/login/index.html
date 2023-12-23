@@ -21,29 +21,16 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                     <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{% url 'Home' %}">Home</a>
+                    </li> 
+                   
+                     <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{% url 'About' %}">About</a>
+                    </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    {% comment %} <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Dropdown
-                        </a> {% endcomment %}
-                        {% comment %} <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li> {% endcomment %}
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">About</a>
-                    </li>
+                        <a class="nav-link active" aria-current="page" href="{% url 'Contact' %}">Contact Us</a>
+                    </li> 
                 </ul>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -53,29 +40,6 @@
             </div>
         </div>
     </nav>
-    {% comment %} <ul>
-        {%for day in days%}
-        <li>
-           {{day}} 
-        </li>
-        {% endfor %}
-    </ul> {% endcomment %}
-    {% comment %} <ul> {% endcomment %}
-        {% comment %} {% for linked in link %} {% endcomment %}
-        {% comment %} <li>
-          <a href="{{linked}}"  
-
-        </li> {% endcomment %}
-        {% comment %} {{linked}}
-        {{link}}
-        {% endfor %} {% endcomment %}
-    {% comment %} </ul> {% endcomment %}
-    {% comment %} {% for d in item %}  # item is list of dicts {% endcomment %}
-    {% for key, value in p %} 
-      <li>{{ key }}</li>
-      {{value}}
-    {% endfor %}
-  {% comment %} {% endfor %} {% endcomment %}
 </body>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
